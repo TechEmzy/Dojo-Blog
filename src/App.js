@@ -14,6 +14,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/create" element={<Create />} />
             <Route path="/blogs/:id" element={<BlogDetails />} />
+            <Route path="*"> <NotFound /> </Route>
           </Routes>
         </div>
       </div>
@@ -22,3 +23,4 @@ function App() {
 }
 
 export default App;
+
